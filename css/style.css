@@ -23,32 +23,65 @@ nav {
   padding-top: 50px;
 }
 
-.bus-info {
-
+.bus {
+  display: block;
+  width: 375px;
+  padding: 10px 0 10px 0;
 }
+
+.bus-info {
+  display: inline-block;
+  width: 70%;
+}
+
 .arrival-info {
-  display: inline;
+  display: inline-block;
+  width: 30%;
+  padding: 5% 0;
   float: right;
 }
-h1 {
+
+.time {
+  display: inline-block;
+  float: right;
+}
+.bus-info h1 {
   font-size: 36px;
   font-weight: 700;
   line-height: 43px;
 }
 
-h3 {
+.arrival-info h1 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 43px;
+  text-align: right;
+}
+
+.arrival-now {
+  color: #34ac49;
+}
+
+.bus-info h3 {
   font-size: 24px;
   font-weight: 400;
   line-height: 29px;
+}
+
+.arrival-info h3 {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: right;
 }
 
 .reroute {
   color: #f96f35;
 }
 
-h5 {
+.bus-info h5 {
   color: #8d8d8d;
   font-size: 17px;
   font-weight: 300;
-  line-height:20px;
+  line-height: 20px;
 }
