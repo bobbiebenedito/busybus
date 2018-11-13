@@ -1,0 +1,54 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont,
+      "Helvetica Neue", "Lucida Grande";
+}
+
+.container {
+  margin: 0 auto;
+  width: 375px;
+}
+
+nav {
+  margin: 0 auto;
+  width: 375px;
+  position: fixed;
+}
+
+.map {
+  padding-top: 50px;
+}
+
+.bus-info {
+
+}
+.arrival-info {
+  display: inline;
+  float: right;
+}
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+}
+
+.reroute {
+  color: #f96f35;
+}
+
+h5 {
+  color: #8d8d8d;
+  font-size: 17px;
+  font-weight: 300;
+  line-height:20px;
+}
