@@ -64,10 +64,16 @@ nav {
   line-height: 22px;
 }
 
+.top {
+ border-radius: 10px 10px 0 0;
+ border: 1px solid #dadada;
+}
+
 .bus {
   display: block;
   width: 375px;
   padding: 10px 0 10px 0;
+  border-bottom: 1px solid #dadada;
 }
 
 .bus-info {
@@ -85,6 +91,7 @@ nav {
 .time {
   display: inline-block;
   float: right;
+  color: #2b6ba1;
 }
 .bus-info h1 {
   font-size: 36px;
@@ -118,7 +125,11 @@ nav {
 
 .reroute {
   color: #f96f35;
-  margin: 5% 0;
+}
+
+div.reroute {
+  display: inline-block;
+  padding: 10% 0 10% 20%;
 }
 
 .bus-info h5 {
