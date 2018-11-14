@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #dbdbdb;
   font-family: system-ui, -apple-system, BlinkMacSystemFont,
       "Helvetica Neue", "Lucida Grande";
 }
@@ -14,21 +14,14 @@ body {
   height: 812px;
 }
 
-.nav-background {
+nav {
   background-color: #f8f8f8;
   margin: 0 auto;
   width: 375px;
   height: 88px;
   position: fixed;
   padding-top: 55px;
-}
-
-nav {
-  margin: 0 auto;
-  width: 375px;
-  height: 88px;
-  position: fixed;
-  padding-top: 55px;
+/*  box-shadow: 0 0.5px rgba(0,0,0,0.3) red;*/
 }
 .map {
   position: fixed;
@@ -83,8 +76,8 @@ nav {
   line-height: 22px;
 }
 
-
 .top-background {
+  display: block;
   border-radius: 10px 10px 0 0;
   width: 375px;
   height: 50px;
@@ -97,12 +90,20 @@ nav {
 }
 
 .top {
+  display: block;
  border-radius: 10px 10px 0 0;
  width: 375px;
  height: 50px;
  border: 1px solid #dadada;
+ position: relative;
  /*box-shadow: 0 -2px 3px 0 rgba(0,0,0,0.05);*/
 /* background-color: rgba(255, 255, 255, 0.5);*/
+}
+
+#next-arrivals {
+  padding: 1% 0 3% 5%;
+  top: 50%;
+  transform: translateY(-20%);
 }
 
 .bus-background {
@@ -120,39 +121,50 @@ nav {
   display: block;
   width: 375px;
   height: 108px;
-  padding: 10px 0 10px 0;
+  padding: 1%;
   border-bottom: 1px solid #dadada;
   border-right: 1px solid #dadada;
   border-left: 1px solid #dadada;
+  position: relative;
 }
 
 .bus-info {
   display: inline-block;
-  width: 70%;
+  width: 65%;
+  padding: 1% 0 1% 5%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .arrival-info {
   display: inline-block;
   width: 30%;
-  padding: 5% 0;
+  padding: 1% 5% 1% 0;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translateY(-50%);
   float: right;
 }
 
 .time {
   display: inline-block;
+  margin: 0 auto;
+  padding: 5% 0;
   float: right;
   color: #2b6ba1;
 }
 .bus-info h1 {
   font-size: 36px;
   font-weight: 700;
-  line-height: 43px;
+  /*line-height: 43px;*/
 }
 
 .arrival-info h1 {
   font-size: 28px;
   font-weight: 700;
-  line-height: 43px;
+  /*line-height: 43px;*/
   text-align: right;
 }
 
@@ -163,13 +175,13 @@ nav {
 .bus-info h3 {
   font-size: 24px;
   font-weight: 500;
-  line-height: 29px;
+/*  line-height: 29px;*/
 }
 
 .arrival-info h3 {
   font-size: 17px;
   font-weight: 300;
-  line-height: 20px;
+/*  line-height: 20px;*/
   text-align: right;
 }
 
@@ -179,12 +191,12 @@ nav {
 
 div.reroute {
   display: inline-block;
-  padding: 10% 0 10% 20%;
+  padding: 12% 0 5% 15%;
 }
 
 .bus-info h5 {
   color: #8d8d8d;
   font-size: 17px;
   font-weight: 300;
-  line-height: 20px;
+/*  line-height: 20px;*/
 }
