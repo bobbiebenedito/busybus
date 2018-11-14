@@ -158,13 +158,13 @@ nav {
 .bus-info h1 {
   font-size: 36px;
   font-weight: 700;
-  /*line-height: 43px;*/
+  line-height: 1.1em;
 }
 
 .arrival-info h1 {
   font-size: 28px;
   font-weight: 700;
-  /*line-height: 43px;*/
+  line-height: 1.5em;
   text-align: right;
 }
 
@@ -175,13 +175,14 @@ nav {
 .bus-info h3 {
   font-size: 24px;
   font-weight: 500;
+  line-height: 1.2em;
 /*  line-height: 29px;*/
 }
 
 .arrival-info h3 {
   font-size: 17px;
   font-weight: 300;
-/*  line-height: 20px;*/
+  line-height: 1.2em;
   text-align: right;
 }
 
@@ -198,5 +199,5 @@ div.reroute {
   color: #8d8d8d;
   font-size: 17px;
   font-weight: 300;
-/*  line-height: 20px;*/
+  line-height: 1.2em;
 }
