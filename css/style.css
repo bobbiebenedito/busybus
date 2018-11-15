@@ -90,7 +90,7 @@ nav {
   display: block;
   width: 375px;
   height: 50px;
-  background-color: #ffffff;
+  background-color:#ffffff;
   border-radius: 10px 10px 0 0;
   filter: opacity(95%);
   -webkit-filter: opacity(95%);
@@ -148,7 +148,7 @@ nav {
   position: absolute;
   display: inline-block;
   width: 65%;
-  padding: 1% 0 1% 5%;
+  padding: 1% 0 1% 4%;
   top: 50%;
   transform: translateY(-50%);
 }
