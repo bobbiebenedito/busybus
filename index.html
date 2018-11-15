@@ -11,12 +11,14 @@
   <body>
     <section class="container">
 
+<!---Div containing iOS notch overlay--->
       <div id="notch">
         <img src="images\iphone-x-wallpaper-notch-template.png" alt="notch" style="width:375px; height:812px;">
       </div>
 
+<!---Nav bar--->
       <nav>
-        <div class="status-bar">
+        <div id="status-bar">
           <div id="status-bar-left"><h1>9:41</h1></div>
           <div id="status-bar-right">
             <i class="fas fa-signal"></i>
@@ -25,37 +27,35 @@
           </div>
         </div>
 
-        <div class="nav-bar">
-          <div class="back">
+        <div id="nav-bar">
+          <div id="back">
             <i class="fas fa-chevron-left"></i>
             Back
           </div>
 
-          <div class="bus-stop">
+          <div id="bus-stop">
             <h1>Washington & State</h1>
           </div>
         </div>
       </nav>
-<!---
-      <section class="map-view">
-        <div class="map">
-          <img src="images\map.png" alt="Map of Washington and State" style="width:375px;height:724px;">
-        </div>
-      </section>
---->
+
+<!---Main content--->
       <section class="main">
 
-        <div class="map">
+<!---Div containing map--->
+        <div id="map">
           <img src="images\map.png" alt="Map of Washington and State" style="width:375px;height:724px;">
         </div>
 
-        <div class="bus-list">
+<!---Div containing bus list--->
+        <div id="bus-list">
           <ul>
             <li>
+              <!---Background div for color. Separate div is used so opacity can be altered--->
                 <div class="top-background">
                 </div>
                 <div class="top">
-                  <div class="slider">
+                  <div id="slider">
                     <img src="images\icons8-horizontal-line-48.png">
                   </div>
                   <div id="next-arrivals">
@@ -67,6 +67,7 @@
             <li>
               <div class="bus-background">
               </div>
+              <!---Bus div is broken up into bus-info on the left and arrival-info on the right--->
               <div class="bus">
                 <div class="bus-info">
                   <h1>60</h1>
