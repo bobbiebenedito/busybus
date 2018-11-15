@@ -11,7 +11,7 @@ body {
 .container {
   margin: 0 auto;
   width: 375px;
-  height: 812px;
+/*  height: 812px;*/
 }
 
 nav {
@@ -23,12 +23,31 @@ nav {
   padding-top: 55px;
 /*  box-shadow: 0 0.5px rgba(0,0,0,0.3) red;*/
 }
-.map {
-  position: fixed;
+
+.main {
+  position: relative;
 }
 
-.bus-list {
+/*.bus-list {
   padding-top: 242px;
+  top: 330px;
+ top: 50%;
+ position: absolute;
+}*/
+
+.bus-list {
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  width: 375px;
+  z-index: -2;
+}
+
+.map {
+  margin: 0 auto;
+  padding-top: 88px;
+  z-index: -3;
+  position: relative;
 }
 
 .back {
@@ -47,22 +66,6 @@ nav {
   font-size: 18px;
   font-weight: 500;
   text-align: center;
-}
-
-.map {
-  margin: 0 auto;
-  padding-top: 88px;
-}
-
-.bus-list {
-  margin: 0 auto;
-  position: fixed;
-  bottom: 0;
-  width: 375px;
-}
-
-.content {
-  position: absolute;
 }
 
 .slider img {
@@ -149,7 +152,6 @@ nav {
 }
 
 .time {
-  display: inline-block;
   margin: 0 auto;
   padding: 5% 0;
   float: right;
