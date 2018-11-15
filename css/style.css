@@ -14,18 +14,25 @@ body {
 /*  height: 812px;*/
 }
 
+#notch {
+  margin: 0 auto;
+  width: 375px;
+  position: absolute;
+  z-index: 10;
+}
+
 nav {
   background-color: #f8f8f8;
   margin: 0 auto;
   width: 375px;
   height: 88px;
   position: relative;
-  padding-top: 15px;
+  padding-top: 10px;
   border-bottom: 0.5px solid rgba(0,0,0,0.3);
 }
 
 .nav-bar {
-  padding-top: 5%;
+  padding-top: 6%;
 }
 /*.status-bar {
   display: block;
@@ -41,8 +48,8 @@ nav {
 
 #status-bar-right {
   display: inline-block;
-  padding-left: 25%;
-  padding-right: 5%;
+  padding-left: 28%;
+  padding-right: 2%;
   width: 49%;
 }
 
@@ -216,7 +223,7 @@ nav {
 
 div.reroute {
   display: inline-block;
-  padding: 12% 0 5% 15%;
+  padding: 20% 0 5% 15%;
 }
 
 .bus-info h5 {
