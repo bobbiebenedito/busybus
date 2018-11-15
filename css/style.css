@@ -19,9 +19,9 @@ nav {
   margin: 0 auto;
   width: 375px;
   height: 88px;
-  position: fixed;
+  position: relative;
   padding-top: 55px;
-/*  box-shadow: 0 0.5px rgba(0,0,0,0.3) red;*/
+  border-bottom: 0.5px solid rgba(0,0,0,0.3);
 }
 
 .main {
@@ -35,19 +35,19 @@ nav {
  position: absolute;
 }*/
 
+.map {
+  margin: 0 auto;
+/*  padding-top: 88px;*/
+  z-index: -3;
+  position: relative;
+}
+
 .bus-list {
   margin: 0 auto;
   position: absolute;
   bottom: 0;
   width: 375px;
   z-index: -2;
-}
-
-.map {
-  margin: 0 auto;
-  padding-top: 88px;
-  z-index: -3;
-  position: relative;
 }
 
 .back {
