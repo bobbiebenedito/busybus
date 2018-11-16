@@ -23,6 +23,7 @@ body {
 #notch {
   position: fixed;
   width: 375px;
+  height: 812px;
   margin: 0 auto;
   z-index: 1;
 }
@@ -170,7 +171,7 @@ nav {
 .bus-info {
   position: absolute;
   display: inline-block;
-  width: 65%;
+  width: 60%;
   padding: 1% 0 1% 4%;
   top: 50%;
   transform: translateY(-50%);
@@ -200,10 +201,10 @@ nav {
 .arrival-info {
   position: absolute;
   display: inline-block;
-  width: 30%;
-  padding: 1% 5% 1% 0;
+  width: 35%;
+  padding: 1% 4% 1% 0;
   top: 50%;
-  left: 70%;
+  left: 65%;
   transform: translateY(-50%);
 }
 
@@ -215,6 +216,7 @@ nav {
 }
 
 .arrival-info h1 {
+  display: inline;
   font-size: 28px;
   font-weight: 700;
   line-height: 1.5em;
@@ -222,8 +224,18 @@ nav {
 }
 
 .arrival-info h3 {
+  display: inline;
   font-size: 17px;
   font-weight: 300;
+  line-height: 1.2em;
+  text-align: right;
+}
+
+.arrival-info h6 {
+  display: block;
+  color: #8d8d8d;
+  font-size: 14px;
+  font-weight: 200;
   line-height: 1.2em;
   text-align: right;
 }
@@ -238,6 +250,9 @@ nav {
 }
 
 div.reroute {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-65%) translateX(-20%);
   display: inline-block;
-  padding: 20% 0 5% 15%;
+  padding: 20% 10% 5% 15%;
 }
