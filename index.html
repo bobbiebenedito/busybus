@@ -1,189 +1,205 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-  </head>
-  <body>
-    <section class="container">
 
-<!---Div containing iOS notch overlay--->
-      <div id="notch">
-        <img src="images\iphone-x-wallpaper-notch-template.png" alt="notch" style="width:375px; height:812px;">
+<head>
+  <meta charset="utf-8">
+  <title>BusyBus</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+
+<body>
+  <section class="container">
+
+    <!--Div containing iOS notch overlay-->
+    <div id="notch">
+      <img src="images\iphone-x-wallpaper-notch-template.png" alt="notch" style="width:375px; height:812px;">
+    </div>
+
+    <!--Nav bar-->
+    <nav>
+      <div id="status-bar">
+        <div id="status-bar-left">
+          <h1>9:41</h1>
+        </div>
+        <div id="status-bar-right">
+          <i class="fas fa-signal"></i>
+          <i class="fas fa-wifi"></i>
+          <i class="fas fa-battery-full"></i>
+        </div>
       </div>
 
-<!---Nav bar--->
-      <nav>
-        <div id="status-bar">
-          <div id="status-bar-left"><h1>9:41</h1></div>
-          <div id="status-bar-right">
-            <i class="fas fa-signal"></i>
-            <i class="fas fa-wifi"></i>
-            <i class="fas fa-battery-full"></i>
-          </div>
+      <div id="nav-bar">
+        <div id="back">
+          <i class="fas fa-chevron-left"></i>
+          Back
         </div>
 
-        <div id="nav-bar">
-          <div id="back">
-            <i class="fas fa-chevron-left"></i>
-            Back
-          </div>
-
-          <div id="bus-stop">
-            <h1>Washington & State</h1>
-          </div>
+        <div id="bus-stop">
+          <h1>Washington & State</h1>
         </div>
-      </nav>
-
-      <div id="top-wrapper">
-            <div class="top-background">
-            </div>
-            <div class="top">
-              <div id="slider">
-                <img src="images\icons8-horizontal-line-48.png">
-              </div>
-              <div id="next-arrivals">
-                <h2>Next arrivals</h2>
-              </div>
-            </div>
       </div>
-<!---Main content--->
-      <section class="main">
+    </nav>
 
-<!---Div containing map--->
-        <div id="map">
-          <img src="images\map.png" alt="Map of Washington and State" style="width:375px;height:724px;">
+    <!--Top of bus list drawer. Is outside of main so can sticky at the bottom of the nav bar.-->
+    <div id="top-wrapper">
+      <div class="top-background">
+      </div>
+      <div class="top">
+        <div id="slider">
+          <img src="images\icons8-horizontal-line-48.png">
         </div>
-
-
-          <!---Background div for color. Separate div is used so opacity can be altered--->
-
-<!---Div containing bus list--->
-        <div id="bus-list">
-          <ul>
-
-
-            <li>
-              <div class="bus-background">
-              </div>
-              <!---Bus div is broken up into bus-info on the left and arrival-info on the right--->
-              <div class="bus">
-                <div class="bus-info">
-                  <h1>60</h1>
-                  <h3>East</h3>
-                  <h5>To Randolph/Harbor Drive</h5>
-                </div>
-                <div class="arrival-info">
-                  <div class="time">
-                    <div class="arrival-now"><h1>Now</h1></div>
-                    <h6>20 min</h6>
-                  </div>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="bus-background">
-              </div>
-              <div class="bus">
-                <div class="bus-info">
-                  <h1>124</h1>
-                  <h3>East</h3>
-                  <h5>To Navy Pier</h5>
-                </div>
-                <div class="arrival-info">
-                  <div class="time">
-                    <h1>2</h1>
-                    <h3>min</h3>
-                    <h6>12 min</h6>
-                  </div>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="bus-background">
-              </div>
-              <div class="bus">
-                <div class="bus-info">
-                  <h1>J14</h1>
-                  <h3>South</h3>
-                  <h5>To 103rd/Stony Island</h5>
-                </div>
-                <div class="arrival-info">
-                  <div class="time">
-                    <h1>5</h1>
-                    <h3>min</h3>
-                    <h6>20 min</h6>
-                  </div>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="bus-background">
-              </div>
-              <div class="bus">
-                <div class="bus-info">
-                  <h1>6x</h1>
-                  <span class="reroute"><h3>Reroute</h3></span>
-                  <h5>To Jackson Park Express</h5>
-                </div>
-                <div class="arrival-info">
-                  <div class="reroute"><i class="fas fa-exclamation-triangle fa-2x"></i></div>
-                  <div class="time">
-                    <h1>7</h1>
-                    <h3>min</h3>
-                  </div>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="bus-background">
-              </div>
-              <div class="bus">
-                <div class="bus-info">
-                  <h1>124</h1>
-                  <h3>South</h3>
-                  <h5>To Navy Pier</h5>
-                </div>
-                <div class="arrival-info">
-                  <div class="time">
-                    <h1>8</h1>
-                    <h3>min</h3>
-                    <h6>18 min</h6>
-                  </div>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="bus-background">
-              </div>
-              <div class="bus">
-                <div class="bus-info">
-                  <h1>151</h1>
-                  <h3>North</h3>
-                  <h5>To Devon/Clark</h5>
-                </div>
-                <div class="arrival-info">
-                  <div class="time">
-                    <h1>12</h1>
-                    <h3>min</h3>
-                    <h6>28 min</h6>
-                  </div>
-                </div>
-              </div>
-            </li>
-
-          </ul>
+        <div id="next-arrivals">
+          <h2>Next arrivals</h2>
         </div>
-      </section>
+      </div>
+    </div>
+    <!--Main content-->
+    <section class="main">
+
+      <!--Div containing map-->
+      <div id="map">
+        <img src="images\map.png" alt="Map of Washington and State" style="width:375px;height:724px;">
+      </div>
+
+      <!--Div containing bus list-->
+      <div id="bus-list">
+        <ul>
+          <li>
+            <!--Background div for color. Separate div is used so opacity can be altered-->
+            <div class="bus-background">
+            </div>
+            <!--Bus div is broken up into bus-info on the left and arrival-info on the right-->
+            <div class="bus">
+              <div class="bus-info">
+                <h1>60</h1>
+                <h3>East</h3>
+                <h5>To Randolph/Harbor Drive</h5>
+              </div>
+              <div class="arrival-info">
+                <div class="time">
+                  <div class="arrival-now">
+                    <h1>Now</h1>
+                  </div>
+                </div>
+                <div class="frequency">
+                  <h6>every 20 min</h6>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="bus-background">
+            </div>
+            <div class="bus">
+              <div class="bus-info">
+                <h1>124</h1>
+                <h3>East</h3>
+                <h5>To Navy Pier</h5>
+              </div>
+              <div class="arrival-info">
+                <div class="time">
+                  <h1>2</h1>
+                  <h3>min</h3>
+                </div>
+                <div class="frequency">
+                  <h6>every 10 min</h6>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="bus-background">
+            </div>
+            <div class="bus">
+              <div class="bus-info">
+                <h1>J14</h1>
+                <h3>South</h3>
+                <h5>To 103rd/Stony Island</h5>
+              </div>
+              <div class="arrival-info">
+                <div class="time">
+                  <h1>5</h1>
+                  <h3>min</h3>
+                </div>
+                <div class="frequency">
+                  <h6>every 15 min</h6>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="bus-background">
+            </div>
+            <div class="bus">
+              <div class="bus-info">
+                <h1>6x</h1>
+                <span class="reroute">
+                  <h3>Reroute</h3>
+                </span>
+                <h5>To Jackson Park Express</h5>
+              </div>
+              <div class="arrival-info">
+                <div class="reroute"><i class="fas fa-exclamation-triangle fa-2x"></i></div>
+                <div class="time">
+                  <h1>7</h1>
+                  <h3>min</h3>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="bus-background">
+            </div>
+            <div class="bus">
+              <div class="bus-info">
+                <h1>124</h1>
+                <h3>South</h3>
+                <h5>To Navy Pier</h5>
+              </div>
+              <div class="arrival-info">
+                <div class="time">
+                  <h1>8</h1>
+                  <h3>min</h3>
+                </div>
+                <div class="frequency">
+                  <h6>every 10 min</h6>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="bus-background">
+            </div>
+            <div class="bus">
+              <div class="bus-info">
+                <h1>151</h1>
+                <h3>North</h3>
+                <h5>To Devon/Clark</h5>
+              </div>
+              <div class="arrival-info">
+                <div class="time">
+                  <h1>12</h1>
+                  <h3>min</h3>
+                </div>
+                <div class="frequency">
+                  <h6>every 16 min</h6>
+                </div>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
     </section>
-  </body>
+  </section>
+</body>
+
 </html>

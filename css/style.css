@@ -5,7 +5,7 @@
 body {
   background-color: #dbdbdb;
   font-family: system-ui, -apple-system, BlinkMacSystemFont,
-      "Helvetica Neue", "Lucida Grande";
+    "Helvetica Neue", "Lucida Grande";
   width: 375px;
   height: 812px;
   margin: 0 auto;
@@ -19,7 +19,7 @@ body {
   margin: 0 auto;
 }
 
-/*Positions the notch on iPhone models X and later*/
+/*Positions the notch for iPhone X models*/
 #notch {
   position: fixed;
   width: 375px;
@@ -36,19 +36,19 @@ nav {
   margin: 0 auto;
   padding: 10px 0 0 0;
   background-color: #f8f8f8;
-  border-bottom: 0.5px solid rgba(0,0,0,0.3);
-}
-
-#status-bar-right {
-  display: inline-block;
-  width: 49%;
-  padding: 0 2% 0 28%;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
 }
 
 #status-bar-left {
   display: inline-block;
   width: 49%;
   padding: 0 0 0 7%;
+}
+
+#status-bar-right {
+  display: inline-block;
+  width: 49%;
+  padding: 0 2% 0 28%;
 }
 
 #nav-bar {
@@ -72,22 +72,56 @@ nav {
 }
 
 #top-wrapper {
+  position: -webkit-sticky;
   position: sticky;
   top: -259px;
   transform: translateY(332px);
   z-index: -1;
 }
 
+/*Styling for the top of the bus-list drawer*/
+.top-background {
+  position: absolute;
+  display: block;
+  width: 375px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 -2px 3px 0 rgba(0, 0, 0, 0.05);
+  z-index: -1;
+}
+
+.top {
+  position: relative;
+  display: block;
+  width: 375px;
+  height: 50px;
+  border-radius: 10px 10px 0 0;
+  border: 1px solid #dadada;
+}
+
+#slider img {
+  display: block;
+  margin: 0 auto;
+}
+
+#next-arrivals {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-20%);
+  padding: 1% 0 3% 5%;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
 /*Styles main content*/
 .main {
   position: absolute;
+  top: 88px;
   width: 375px;
   height: 724px;
-  top: 88px;
-  /*overflow-x: hidden;
-  overflow-y: scroll;*/
 }
-
 
 #map {
   position: fixed;
@@ -97,63 +131,23 @@ nav {
 }
 
 #bus-list {
-  /*position: -webkit-sticky;
-  position: sticky;*/
   position: relative;
   top: 0px;
   width: 375px;
-/*  height: 482px;*/
   margin: 0 auto;
-/*  padding-top: 242px;*/
   transform: translateY(292px);
   z-index: -2;
-/*  overflow: scroll;*/
-}
-
-/*Styling for the top of the bus-list drawer*/
-.top-background {
-  position: absolute;
-  display: block;
-  width: 375px;
-  height: 50px;
-  background-color:#ffffff;
-  border-radius: 10px 10px 0 0;
-  box-shadow: 0 -2px 3px 0 rgba(0,0,0,0.05);
-  z-index: -1;
-}
-
-.top {
- position: relative;
- display: block;
- width: 375px;
- height: 50px;
- border-radius: 10px 10px 0 0;
- border: 1px solid #dadada;
-}
-
-#slider img {
-  display: block;
-  margin: 0 auto;
-}
-
-#next-arrivals {
-  padding: 1% 0 3% 5%;
-  top: 50%;
-  transform: translateY(-20%);
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 22px;
 }
 
 /*Styling for all bus arrival list items*/
 .bus-background {
+  position: absolute;
   display: block;
   width: 375px;
   height: 108px;
   background-color: #ffffff;
   filter: opacity(95%);
   -webkit-filter: opacity(95%);
-  position: absolute;
 }
 
 .bus {
@@ -197,7 +191,6 @@ nav {
 }
 
 /*Styling for arrival info, displayed on the right-hand side.*/
-
 .arrival-info {
   position: absolute;
   display: inline-block;
@@ -211,8 +204,15 @@ nav {
 .time {
   float: right;
   margin: 0 auto;
-  padding: 5% 0;
+  padding: .5% 0;
   color: #2b6ba1;
+}
+
+.frequency {
+  float: right;
+  margin: 0 auto;
+  padding: .5% 0;
+  color: #8d8d8d;
 }
 
 .arrival-info h1 {
@@ -233,7 +233,6 @@ nav {
 
 .arrival-info h6 {
   display: block;
-  color: #8d8d8d;
   font-size: 14px;
   font-weight: 200;
   line-height: 1.2em;
