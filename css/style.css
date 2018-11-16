@@ -6,16 +6,22 @@ body {
   background-color: #dbdbdb;
   font-family: system-ui, -apple-system, BlinkMacSystemFont,
       "Helvetica Neue", "Lucida Grande";
+  width: 375px;
+  height: 812px;
+  margin: 0 auto;
 }
 
 .container {
+  position: absolute;
+  top: 0px;
   width: 375px;
+  height: 812px;
   margin: 0 auto;
 }
 
 /*Positions the notch on iPhone models X and later*/
 #notch {
-  position: absolute;
+  position: fixed;
   width: 375px;
   margin: 0 auto;
   z-index: 1;
@@ -23,7 +29,7 @@ body {
 
 /*Styles nav bar*/
 nav {
-  position: relative;
+  position: fixed;
   width: 375px;
   height: 88px;
   margin: 0 auto;
@@ -57,31 +63,50 @@ nav {
 
 #bus-stop {
   display: inline-block;
-  width: 60%;
+  width: 57%;
   margin: 0 auto;
   font-size: 18px;
   font-weight: 500;
   text-align: center;
 }
 
+#top-wrapper {
+  position: sticky;
+  top: -259px;
+  transform: translateY(332px);
+  z-index: -1;
+}
+
 /*Styles main content*/
 .main {
-  position: relative;
+  position: absolute;
+  width: 375px;
+  height: 724px;
+  top: 88px;
+  /*overflow-x: hidden;
+  overflow-y: scroll;*/
 }
 
 
 #map {
-  position: relative;
+  position: fixed;
+  top: 88px;
   margin: 0 auto;
   z-index: -3;
 }
 
 #bus-list {
-  position: absolute;
+  /*position: -webkit-sticky;
+  position: sticky;*/
+  position: relative;
+  top: 0px;
   width: 375px;
+/*  height: 482px;*/
   margin: 0 auto;
-  bottom: 0;
+/*  padding-top: 242px;*/
+  transform: translateY(292px);
   z-index: -2;
+/*  overflow: scroll;*/
 }
 
 /*Styling for the top of the bus-list drawer*/
@@ -92,8 +117,6 @@ nav {
   height: 50px;
   background-color:#ffffff;
   border-radius: 10px 10px 0 0;
-  filter: opacity(95%);
-  -webkit-filter: opacity(95%);
   box-shadow: 0 -2px 3px 0 rgba(0,0,0,0.05);
   z-index: -1;
 }
