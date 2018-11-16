@@ -25,7 +25,7 @@ body {
   width: 375px;
   height: 812px;
   margin: 0 auto;
-  z-index: 10;
+  z-index: 9999;
 }
 
 /*Styles nav bar*/
@@ -37,7 +37,7 @@ nav {
   padding: 10px 0 0 0;
   background-color: #f8f8f8;
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
-  z-index: 5;
+  z-index: 8999;
 }
 
 #status-bar-left {
@@ -77,7 +77,7 @@ nav {
   position: sticky;
   top: -259px;
   transform: translateY(332px);
-  z-index: 0;
+  z-index: 7999;
 }
 
 /*Styling for the top of the bus-list drawer*/
@@ -136,9 +136,7 @@ nav {
   width: 375px;
   margin: 0 auto;
   transform: translateY(292px);
-  z-index: -5;
-  -webkit-transform: translate3d(0,0,1px);
-  transform: translate3d(0,0,1px);
+  z-index: 6999;
 }
 
 /*Styling for all bus arrival list items*/
