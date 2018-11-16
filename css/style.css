@@ -137,6 +137,8 @@ nav {
   margin: 0 auto;
   transform: translateY(292px);
   z-index: -5;
+  -webkit-transform: translate3d(0,0,1px);
+  transform: translate3d(0,0,1px);
 }
 
 /*Styling for all bus arrival list items*/
