@@ -5,7 +5,7 @@
 body {
   background-color: #dbdbdb;
   font-family: system-ui, -apple-system, BlinkMacSystemFont,
-    "Helvetica Neue", "Lucida Grande";
+    "Helvetica Neue", "Lucida Grande", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   width: 375px;
   height: 812px;
   margin: 0 auto;
