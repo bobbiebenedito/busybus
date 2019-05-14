@@ -2,6 +2,8 @@
 <h3>Bobbie Ysabel Benedito</h3>
 <h3>11/16/2018</h3>
 
+![BusyBus screenshot](images/README-img.png)
+
 This project is a bus stop screen for the BusyBus mobile application. I built this during my apprenticeship in the Designer Track at [Bloc](https://bloc.io). 
 
 BusyBus is operated by a local urban transit system and serves thousands of commuters in a large city. Due to rapid expansion, the bus stop at Washington & State now serves seven bus lines. Riders are complaining that they have no way of knowing which bus is coming and when.
